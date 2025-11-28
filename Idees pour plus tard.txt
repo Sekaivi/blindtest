@@ -1,0 +1,1 @@
+chat dans le mode VS + dans le mode VS mettre les points en fonction de l'ordre des réponses

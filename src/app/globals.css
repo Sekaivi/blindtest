@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:wght@200..900&display=swap');
+@import "tailwindcss";
+
+:root {
+    --white: #fafafa;
+    --gray: #707070;
+    --black: #1c191e;
+    --background: #fafafa;
+    --middleground: #e8e8e8;
+    --foreground: #d3d3d3;
+    --text: #1c191e;
+    --valid: #16B600;
+    --error: #d71a1a;
+    --accent: #9802e0;
+    --accent-lighter: #C631E6;
+}
+
+/*@theme inline {*/
+/*  --color-background: var(--background);*/
+/*  --color-foreground: var(--foreground);*/
+/*  --font-sans: var(--font-geist-sans);*/
+/*  --font-mono: var(--font-geist-mono);*/
+/*}*/
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --white: #fafafa;
+        --gray: #707070;
+        --black: #1c191e;
+        --background: #1c191e;
+        --middleground: #262328;
+        --foreground: #3b373b;
+        --text: #fafafa;
+        --valid: #16B600;
+        --error: #d71a1a;
+        --accent: #9802e0;
+        --accent-lighter: #C631E6;
+    }
+}
+
+body {
+    background: var(--background);
+    font-family: "Zalando Sans Expanded", Roboto, Arial, Helvetica, sans-serif;
+}
+
+.zalando-sans-expanded-regular {
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.zalando-sans-expanded-semibold {
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.zalando-sans-expanded-bold {
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.expand-hover{
+    height: calc(var(--spacing) * 60);
+    transition: 300ms ease-in-out;
+    @media screen and (min-width: 768px){
+        flex: 6;
+    }
+}
+
+.expand-hover:hover, .expand-hover:active{
+    @media screen and (max-width: 768px){
+        height: calc(var(--spacing) * 80);
+    }
+    @media screen and (min-width: 768px){
+        flex: 8;
+    }
+}
+
+@keyframes pointsPopup {
+    0% {
+        opacity: 0;
+        transform: translateY(10%);
+    }
+    25% {
+        opacity: 1;
+        transform: translateY(5%);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-75%);
+    }
+}
+
+.points-popup {
+    animation: pointsPopup 2s ease-out forwards;
+    font-weight: bold;
+    color: var(--valid);
+    pointer-events: none;
+    position: absolute;
+    left: 100%;
+}
