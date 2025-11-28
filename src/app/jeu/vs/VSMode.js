@@ -20,7 +20,7 @@ export default function VSMode() {
         WAITING: "waiting",
     };
 
-    const SOCKET_SERVER_URL = process.env.NEXT_PUBLIC_SOCKET_URL || "http://localhost:3001";
+    const SOCKET_SERVER_URL = process.env.NEXT_PUBLIC_SOCKET_URL || "http://localhost:10000";
 
     const [isConnected, setIsConnected] = useState(false);
     const [pseudo, setPseudo] = useState("");

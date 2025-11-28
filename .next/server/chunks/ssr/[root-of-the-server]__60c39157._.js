@@ -659,6 +659,7 @@ function VSMode() {
         GAME_OVER: "game_over",
         WAITING: "waiting"
     };
+    const SOCKET_SERVER_URL = process.env.NEXT_PUBLIC_SOCKET_URL || "http://localhost:10000";
     const [isConnected, setIsConnected] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     const [pseudo, setPseudo] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("");
     const [players, setPlayers] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])({});
@@ -734,7 +735,7 @@ function VSMode() {
     ]);
     // sockets communication ^^
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
-        const socket = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$socket$2e$io$2d$client$2f$build$2f$esm$2d$debug$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["io"])("http://localhost:3001", {
+        const socket = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$socket$2e$io$2d$client$2f$build$2f$esm$2d$debug$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["io"])(SOCKET_SERVER_URL, {
             path: "/socket.io",
             transports: [
                 "websocket"
@@ -958,7 +959,7 @@ function VSMode() {
                 children: "Blindtest en VS !"
             }, void 0, false, {
                 fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                lineNumber: 327,
+                lineNumber: 330,
                 columnNumber: 13
             }, this),
             roomCode && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -968,7 +969,7 @@ function VSMode() {
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                lineNumber: 329,
+                lineNumber: 332,
                 columnNumber: 17
             }, this),
             !roomCode && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -979,12 +980,12 @@ function VSMode() {
                             children: "Connexion au serveur en cours..."
                         }, void 0, false, {
                             fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                            lineNumber: 339,
+                            lineNumber: 342,
                             columnNumber: 29
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Loading$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                             fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                            lineNumber: 340,
+                            lineNumber: 343,
                             columnNumber: 29
                         }, this)
                     ]
@@ -998,7 +999,7 @@ function VSMode() {
                             className: "bg-white text-black px-2 py-1 rounded"
                         }, void 0, false, {
                             fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                            lineNumber: 344,
+                            lineNumber: 347,
                             columnNumber: 29
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1007,14 +1008,14 @@ function VSMode() {
                             children: "Créer une partie"
                         }, void 0, false, {
                             fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                            lineNumber: 351,
+                            lineNumber: 354,
                             columnNumber: 29
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                             children: "Ou bien en rejoindre une:"
                         }, void 0, false, {
                             fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                            lineNumber: 352,
+                            lineNumber: 355,
                             columnNumber: 29
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
@@ -1027,7 +1028,7 @@ function VSMode() {
                                     name: "roomCode"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                    lineNumber: 354,
+                                    lineNumber: 357,
                                     columnNumber: 33
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1036,20 +1037,20 @@ function VSMode() {
                                     children: "Rejoindre"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                    lineNumber: 355,
+                                    lineNumber: 358,
                                     columnNumber: 33
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                            lineNumber: 353,
+                            lineNumber: 356,
                             columnNumber: 29
                         }, this)
                     ]
                 }, void 0, true)
             }, void 0, false, {
                 fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                lineNumber: 334,
+                lineNumber: 337,
                 columnNumber: 17
             }, this),
             roomCode && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
@@ -1066,7 +1067,7 @@ function VSMode() {
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                lineNumber: 368,
+                                lineNumber: 371,
                                 columnNumber: 29
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1077,7 +1078,7 @@ function VSMode() {
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                lineNumber: 369,
+                                lineNumber: 372,
                                 columnNumber: 29
                             }, this),
                             players[socketRef.current.id] && players[socketRef.current.id].roomLeader ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
@@ -1086,7 +1087,7 @@ function VSMode() {
                                         children: "Vous êtes le chef de salle !"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                        lineNumber: 372,
+                                        lineNumber: 375,
                                         columnNumber: 37
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1095,7 +1096,7 @@ function VSMode() {
                                         children: "Lancer la partie !"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                        lineNumber: 373,
+                                        lineNumber: 376,
                                         columnNumber: 37
                                     }, this)
                                 ]
@@ -1103,13 +1104,13 @@ function VSMode() {
                                 children: "En attente du chef de salle pour lancer la partie..."
                             }, void 0, false, {
                                 fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                lineNumber: 378,
+                                lineNumber: 381,
                                 columnNumber: 33
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                        lineNumber: 367,
+                        lineNumber: 370,
                         columnNumber: 25
                     }, this),
                     roomCode && gameState !== GAME_STATE.WAITING && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
@@ -1132,7 +1133,7 @@ function VSMode() {
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                                        lineNumber: 389,
+                                                        lineNumber: 392,
                                                         columnNumber: 45
                                                     }, this),
                                                     pointsPopup && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1140,18 +1141,18 @@ function VSMode() {
                                                         children: pointsPopup
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                                        lineNumber: 390,
+                                                        lineNumber: 393,
                                                         columnNumber: 61
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                                lineNumber: 388,
+                                                lineNumber: 391,
                                                 columnNumber: 41
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                            lineNumber: 387,
+                                            lineNumber: 390,
                                             columnNumber: 37
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$TrackAudio$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -1160,7 +1161,7 @@ function VSMode() {
                                             visible: gameState === GAME_STATE.SHOW_ANSWER || gameState === GAME_STATE.GAME_OVER
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                            lineNumber: 394,
+                                            lineNumber: 397,
                                             columnNumber: 37
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1176,23 +1177,23 @@ function VSMode() {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                                    lineNumber: 402,
+                                                    lineNumber: 405,
                                                     columnNumber: 45
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                                lineNumber: 401,
+                                                lineNumber: 404,
                                                 columnNumber: 41
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                            lineNumber: 400,
+                                            lineNumber: 403,
                                             columnNumber: 37
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                    lineNumber: 386,
+                                    lineNumber: 389,
                                     columnNumber: 33
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$TrackAudio$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -1201,7 +1202,7 @@ function VSMode() {
                                     visible: gameState === GAME_STATE.SHOW_ANSWER || gameState === GAME_STATE.GAME_OVER
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                    lineNumber: 407,
+                                    lineNumber: 410,
                                     columnNumber: 33
                                 }, this),
                                 (gameState === GAME_STATE.PLAYING || gameState === GAME_STATE.PAUSED) && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
@@ -1213,7 +1214,7 @@ function VSMode() {
                                                 children: formatTime(timeLeft)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                                lineNumber: 413,
+                                                lineNumber: 416,
                                                 columnNumber: 45
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1225,18 +1226,18 @@ function VSMode() {
                                                     }
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                                    lineNumber: 416,
+                                                    lineNumber: 419,
                                                     columnNumber: 49
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                                lineNumber: 415,
+                                                lineNumber: 418,
                                                 columnNumber: 45
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                        lineNumber: 412,
+                                        lineNumber: 415,
                                         columnNumber: 41
                                     }, this)
                                 }, void 0, false),
@@ -1246,7 +1247,7 @@ function VSMode() {
                                     children: gameStateMessage[0]
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                    lineNumber: 427,
+                                    lineNumber: 430,
                                     columnNumber: 33
                                 }, this),
                                 (gameState === GAME_STATE.PLAYING || gameState === GAME_STATE.SHOW_ANSWER || gameState === GAME_STATE.PAUSED) && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
@@ -1258,12 +1259,12 @@ function VSMode() {
                                                 children: answerMessage
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                                lineNumber: 438,
+                                                lineNumber: 441,
                                                 columnNumber: 45
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                            lineNumber: 437,
+                                            lineNumber: 440,
                                             columnNumber: 41
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
@@ -1285,7 +1286,7 @@ function VSMode() {
                                                                     children: "Titre de la musique :"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                                                    lineNumber: 450,
+                                                                    lineNumber: 453,
                                                                     columnNumber: 53
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -1297,13 +1298,13 @@ function VSMode() {
                                                                     disabled: gameState !== GAME_STATE.PLAYING
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                                                    lineNumber: 451,
+                                                                    lineNumber: 454,
                                                                     columnNumber: 53
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                                            lineNumber: 449,
+                                                            lineNumber: 452,
                                                             columnNumber: 49
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1315,7 +1316,7 @@ function VSMode() {
                                                                     children: "Nom de l'artiste :"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                                                    lineNumber: 465,
+                                                                    lineNumber: 468,
                                                                     columnNumber: 53
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -1327,19 +1328,19 @@ function VSMode() {
                                                                     disabled: gameState !== GAME_STATE.PLAYING
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                                                    lineNumber: 466,
+                                                                    lineNumber: 469,
                                                                     columnNumber: 53
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                                            lineNumber: 464,
+                                                            lineNumber: 467,
                                                             columnNumber: 49
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                                    lineNumber: 448,
+                                                    lineNumber: 451,
                                                     columnNumber: 45
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1349,13 +1350,13 @@ function VSMode() {
                                                     children: "Confirmer"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                                    lineNumber: 480,
+                                                    lineNumber: 483,
                                                     columnNumber: 45
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                            lineNumber: 441,
+                                            lineNumber: 444,
                                             columnNumber: 41
                                         }, this)
                                     ]
@@ -1366,12 +1367,12 @@ function VSMode() {
                                         track: songs[currentSong]
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                        lineNumber: 493,
+                                        lineNumber: 496,
                                         columnNumber: 41
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                    lineNumber: 492,
+                                    lineNumber: 495,
                                     columnNumber: 37
                                 }, this),
                                 gameState === GAME_STATE.GAME_OVER && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
@@ -1383,12 +1384,12 @@ function VSMode() {
                                                 children: answerMessage
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                                lineNumber: 500,
+                                                lineNumber: 503,
                                                 columnNumber: 45
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                            lineNumber: 499,
+                                            lineNumber: 502,
                                             columnNumber: 41
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1402,7 +1403,7 @@ function VSMode() {
                                                             children: "Titre de la musique :"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                                            lineNumber: 505,
+                                                            lineNumber: 508,
                                                             columnNumber: 49
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -1414,13 +1415,13 @@ function VSMode() {
                                                             disabled: gameState !== GAME_STATE.PLAYING
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                                            lineNumber: 506,
+                                                            lineNumber: 509,
                                                             columnNumber: 49
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                                    lineNumber: 504,
+                                                    lineNumber: 507,
                                                     columnNumber: 45
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1431,7 +1432,7 @@ function VSMode() {
                                                             children: "Nom de l'artiste :"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                                            lineNumber: 513,
+                                                            lineNumber: 516,
                                                             columnNumber: 49
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -1443,19 +1444,19 @@ function VSMode() {
                                                             disabled: gameState !== GAME_STATE.PLAYING
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                                            lineNumber: 514,
+                                                            lineNumber: 517,
                                                             columnNumber: 49
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                                    lineNumber: 512,
+                                                    lineNumber: 515,
                                                     columnNumber: 45
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                            lineNumber: 503,
+                                            lineNumber: 506,
                                             columnNumber: 41
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1467,7 +1468,7 @@ function VSMode() {
                                                     children: "Musique précédante"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                                    lineNumber: 521,
+                                                    lineNumber: 524,
                                                     columnNumber: 45
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1476,13 +1477,13 @@ function VSMode() {
                                                     children: "Musique suivante"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                                    lineNumber: 525,
+                                                    lineNumber: 528,
                                                     columnNumber: 45
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                            lineNumber: 520,
+                                            lineNumber: 523,
                                             columnNumber: 41
                                         }, this)
                                     ]
@@ -1490,7 +1491,7 @@ function VSMode() {
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                            lineNumber: 385,
+                            lineNumber: 388,
                             columnNumber: 29
                         }, this)
                     }, void 0, false),
@@ -1501,7 +1502,7 @@ function VSMode() {
                                 children: "Joueurs:"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                lineNumber: 538,
+                                lineNumber: 541,
                                 columnNumber: 33
                             }, this),
                             Object.entries(players).map(([id, player])=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1515,7 +1516,7 @@ function VSMode() {
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                            lineNumber: 541,
+                                            lineNumber: 544,
                                             columnNumber: 41
                                         }, this),
                                         player.answered && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1523,25 +1524,25 @@ function VSMode() {
                                             children: "A repondu !"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                            lineNumber: 543,
+                                            lineNumber: 546,
                                             columnNumber: 45
                                         }, this)
                                     ]
                                 }, id, true, {
                                     fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                    lineNumber: 540,
+                                    lineNumber: 543,
                                     columnNumber: 37
                                 }, this))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                        lineNumber: 537,
+                        lineNumber: 540,
                         columnNumber: 29
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                lineNumber: 365,
+                lineNumber: 368,
                 columnNumber: 17
             }, this)
         ]
