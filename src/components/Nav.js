@@ -12,7 +12,7 @@ export default function TailwindNavbarWithData() {
     const navItems = [
         { label: "Accueil", href: "/" },
         { label: "Jouer", href: "/jeu" },
-        !user ? { label: "Login", href: "/login" } : { label: user.name, href: "/profil" }
+        !user ? { label: "Login", href: "/login" } : { label: user.name + " (Profile)", href: "/profil" }
     ];
 
     return (

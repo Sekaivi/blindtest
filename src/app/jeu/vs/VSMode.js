@@ -668,7 +668,7 @@ export default function VSMode() {
                                         onChange={handleTextareaResize}
                                         onKeyDown={hanldleChatKeyDown}
                                     />
-                                    <button className="px-3 py-1 active:shadow-none font-bold cursor-pointer text-(--white) shadow bg-(--accent) duration-200 hover:bg-(--accent-lighter) rounded" type="submit">{">"}</button>
+                                    <button className="px-3 py-1 self-end active:shadow-none font-bold cursor-pointer text-(--white) shadow bg-(--accent) duration-200 hover:bg-(--accent-lighter) rounded" type="submit">{">"}</button>
                                 </form>
                             </div>
                         </div>

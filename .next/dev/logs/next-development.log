@@ -1,0 +1,25 @@
+[00:00:06.781] Server  LOG      ✓ Ready in 4.1s
+[00:00:09.601] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:10.001] Server  LOG     DB ouverte avec succès
+[00:00:10.007] Server  LOG     Leaderboard raw: [{...},{...},{...},{...},{...}]
+[00:01:51.562] Server  LOG      ✓ Compiled in 76ms
+[00:01:53.572] Server  LOG      ✓ Compiled in 72ms
+[00:02:02.283] Server  LOG     DB ouverte avec succès
+[00:02:02.285] Server  LOG     Leaderboard raw: [{...},{...},{...},{...},{...}]
+[00:02:02.290] Server  LOG     DB ouverte avec succès
+[00:02:02.291] Server  LOG     Leaderboard raw: [{...},{...},{...},{...},{...}]
+[00:02:17.079] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:17.183] Server  LOG     DB ouverte avec succès
+[00:02:17.184] Server  LOG     Leaderboard raw: [{...},{...},{...},{...},{...}]
+[00:02:23.946] Browser LOG     dsa
+[00:02:35.384] Browser LOG     theworldendswithyou
+[00:02:37.616] Browser LOG     0
+[00:03:25.461] Server  LOG      ✓ Compiled in 112ms
+[00:03:35.933] Server  LOG      ✓ Compiled in 76ms
+[00:03:38.392] Server  LOG      ✓ Compiled in 78ms
+[00:03:45.618] Server  LOG      ✓ Compiled in 83ms
+[00:03:49.407] Server  LOG      ✓ Compiled in 66ms
+[00:03:53.817] Server  LOG      ✓ Compiled in 70ms
+[00:03:59.076] Server  LOG      ✓ Compiled in 98ms
+[00:04:18.996] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:20.780] Browser LOG     ds
