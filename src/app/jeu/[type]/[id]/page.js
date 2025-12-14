@@ -8,7 +8,7 @@ export default async function BlindtestPage({ params, searchParams }) {
 
     const type = (params.type || "").trim().toLowerCase();
     const id = (params.id || "").trim().toLowerCase();
-    const limit = parseInt(searchParams?.limit) || 25;
+    const limit = parseInt(searchParams?.limit) || 10;
     const minRank = parseInt(searchParams?.minRank) || 0;
     const maxRank = parseInt(searchParams?.maxRank) || 1000000;
 

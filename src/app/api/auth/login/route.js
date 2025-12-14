@@ -23,7 +23,6 @@ export async function POST(req) {
             );
         }
 
-        // ⚠️ Si tu n'utilises plus bcrypt :
         if (user.password !== password) {
             return new Response(
                 JSON.stringify({ error: 'Mot de passe incorrect.' }),
@@ -31,7 +30,6 @@ export async function POST(req) {
             );
         }
 
-        // Si tout est bon
         return new Response(
             JSON.stringify({ message: 'Connexion réussie', user }),
             { status: 200 }

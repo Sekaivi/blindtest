@@ -1,10 +1,10 @@
 "use client";
-import { useState } from "react";
-import { useRouter } from "next/navigation";
+import {useState} from "react";
+import {useRouter} from "next/navigation";
 
-export default function Search({ type }) {
+export default function Search({type}) {
     const [query, setQuery] = useState("");
-    const [limit, setLimit] = useState(25)
+    const [limit, setLimit] = useState(10)
     const router = useRouter();
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -16,8 +16,8 @@ export default function Search({ type }) {
             if (query.includes("deezer.com")) {
                 const res = await fetch("/api/resolve", {
                     method: "POST",
-                    headers: { "Content-Type": "application/json" },
-                    body: JSON.stringify({ link: query }),
+                    headers: {"Content-Type": "application/json"},
+                    body: JSON.stringify({link: query}),
                 });
 
                 const data = await res.json();
@@ -32,16 +32,22 @@ export default function Search({ type }) {
         }
     }
     return (
-        <form onSubmit={handleSubmit} className="flex items-end">
-            <input type="text" value={query} onChange={(e) => setQuery(e.target.value)}
-                placeholder="Rechercher" className="border p-2 rounded-l" />
-            <div className="flex flex-col gap-2">
-                <label>Nombre de musique chargées</label>
-                <input type="number" value={limit} onChange={(e) => setLimit(e.target.value)}
-                    placeholder="Limite" className="border p-2 rounded-l" />
+        <form onSubmit={handleSubmit}
+              className="flex flex-col items-start space-y-4">
+            <div className="flex flex-col gap-2 w-full">
+                <input type="text" value={query} onChange={(e) => setQuery(e.target.value)}
+                       placeholder="Rechercher"
+                       className="bg-(--white) text-(--black) rounded px-4 py-2 placeholder-(--gray) border border-(--gray) focus:border-(--accent) outline-none"/>
             </div>
-            <button type="submit" className="bg-white text-black px-4 py-2 rounded-r">
-                Créer mon blindtest :D
+            <div className="flex flex-col gap-2 w-full">
+            <label className="text-(--text)">Nombre de musique chargées</label>
+                <input type="number" value={limit} onChange={(e) => setLimit(e.target.value)}
+                       placeholder="Nombre de musiques"
+                       className="bg-(--white) text-(--black) rounded px-4 py-2 placeholder-(--gray) border border-(--gray) focus:border-(--accent) outline-none"/>
+            </div>
+            <button type="submit"
+                    className="cursor-pointer text-nowrap self-center text-(--white) shadow bg-(--accent) duration-200 hover:bg-(--accent-lighter) border border-(--accent) hover:border-(--accent-lighter) font-bold uppercase rounded px-4 py-2 active:shadow-none w-fit">
+                Créer mon blindtest
             </button>
         </form>
     );

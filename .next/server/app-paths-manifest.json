@@ -1,6 +1,8 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
+  "/api/score/leaderboard/route": "app/api/score/leaderboard/route.js",
+  "/api/tracks/route": "app/api/tracks/route.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
   "/jeu/[type]/page": "app/jeu/[type]/page.js",
+  "/jeu/page": "app/jeu/page.js",
   "/page": "app/page.js"
 }

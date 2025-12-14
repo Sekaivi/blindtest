@@ -4,7 +4,7 @@ const { join } = require("path");
 const { Server } = require("socket.io");
 const levenshtein = require("fast-levenshtein");
 
-const PORT = 10000;
+const PORT = 3001;
 const server = createServer();
 
 const io = new Server(server, {
@@ -65,6 +65,7 @@ io.on('connection', (socket) => {
       currentSong: 0,
       tracks: [],
       remainingTime: INTERVAL,
+      messages: [],
 
     };
 
@@ -114,7 +115,7 @@ io.on('connection', (socket) => {
       const room = rooms[roomCode];
       room.tracks = tracks;
     } else {
-      console.error('NOT VALID TRACKS')
+      socket.emit('forceDisconnect');
     }
   })
 
@@ -168,8 +169,8 @@ io.on('connection', (socket) => {
             }
           }
           roomEmit(roomCode, 'setGameState', room.gameState);
-          roomEmit(roomCode, 'nextSongInBlindtest');
-          roomEmit(roomCode , 'currentPlayers' , room.players) ;
+          roomEmit(roomCode, 'nextSongInBlindtest', room.currentSong);
+          roomEmit(roomCode, 'currentPlayers', room.players);
         } else {
           console.log("Cette room n'est plus sensée etre en phase de jeu");
         }
@@ -208,9 +209,10 @@ io.on('connection', (socket) => {
 
     const answerResult = handlePlayerAnswer(room, player, rawTitleAnswer, rawArtistAnswer);
     player.score += answerResult.pointsGained;
+    answerResult.totalPoints = player.score;
     socket.emit('playerAnswerResult', answerResult);
 
-    roomEmit(socket.roomCode, 'playerHasAnswered', [socket.id, player.answered]);
+    roomEmit(socket.roomCode, 'playerHasAnswered', [socket.id, player.answered, player.score]);
 
     const allPlayersAnswered = checkAllPlayersAnswered(room);
     if (allPlayersAnswered) {
@@ -225,7 +227,32 @@ io.on('connection', (socket) => {
       }
       roomEmit(room.roomCode, 'setGameState', room.gameState);
     }
+  });
 
+  socket.on('chatMessage', (messageText) => {
+    const roomCode = socket.roomCode;
+    const room = rooms[roomCode];
+    if (room) {
+      const playerId = socket.id;
+      const playerPseudo = room.players[playerId]?.pseudo || 'Anonyme';
+
+      const message = {
+        id: Date.now(),
+        text: messageText,
+        sender: playerPseudo,
+        senderId: playerId,
+        timestamp: new Date().toLocaleTimeString(),
+      };
+
+      room.messages.push(message);
+
+      roomEmit(roomCode, 'newChatMessage', message);
+
+      // si on veut limiter la taille des messages + potentiellement envoyer un warning
+      /* if (room.messages.length > 50) {
+        room.messages.shift();
+      } */
+    }
   });
 
   socket.on("disconnect", (reason) => {

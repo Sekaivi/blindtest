@@ -27,17 +27,19 @@ export default function BlindtestClient({ type, id , limit , minRank , maxRank }
           }
 
           {!loading && !error && tracks.length === 0 && (
-            <p className="text-gray-500">Aucun morceau trouvé.</p>
+              <div className="flex flex-col items-center">
+                <BlindtestLoader/>
+              </div>
           )}
 
           {!loading && !error && tracks.length > 0 && (
-            <BlindtestJeu songs={tracks} />
+              <BlindtestJeu songs={tracks} />
           )}
         </>
       ) ;
     } catch (e) {
       console.error(e);
-      return <p>La requete n'a pas pu aboutir sowwy</p>
+      return <p>La requête n'a pas pu aboutir.</p>
     }
   } else {
     return <p>Type non reconnu</p>;

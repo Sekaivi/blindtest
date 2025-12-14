@@ -2,14 +2,20 @@
 import React from 'react'
 import { motion, useReducedMotion } from 'framer-motion'
 
-    export default function BlindtestLoader({ size = 50, color = 'bg-(--accent)', speed = 2 }) {
+export default function BlindtestLoader({
+                                            size = 50,
+                                            color = 'bg-(--accent)',
+                                            speed = 2,
+                                            message = "Chargement de votre blindtest"
+                                        }) {
     const shouldReduce = useReducedMotion()
-    const baseHeight = size * 0.4 // hauteur mini (40% de la taille)
-    const fullHeight = size // hauteur max
+    const baseHeight = size * 0.4
+    const fullHeight = size
     const barWidth = size / 3
+
     const barStyle = {
         width: `${barWidth}px`,
-        borderRadius: '6px',
+        borderRadius: '10px',
     }
 
     const variants = {
@@ -27,18 +33,20 @@ import { motion, useReducedMotion } from 'framer-motion'
 
     return (
         <div className="flex flex-col items-center justify-center p-4 px-20
-        bg-[var(--middleground)] shadow-md border border-solid border-[var(--foreground)] rounded-[10px]">
+        bg-(--middleground) shadow-md border border-solid border-(--foreground) rounded-lg
+        mx-auto max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl">
+
             <div className="mb-3 text-center">
-                <span className="sr-only">Chargement de votre blindtest</span>
+                <span className="sr-only">{message}</span>
                 <h3 className="text-xl font-medium text-(--text) zalando-sans-expanded-regular">
-                    Chargement de votre blindtest
+                    {message}
                 </h3>
             </div>
 
             <div
                 role="status"
                 aria-live="polite"
-                aria-label="Chargement de votre blindtest"
+                aria-label={message}
                 className="flex items-center gap-2 h-16 justify-center"
             >
                 {[0, 1, 2].map((i) =>

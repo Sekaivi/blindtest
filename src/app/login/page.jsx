@@ -23,32 +23,31 @@ export default function LoginPage() {
     };
 
     return (
-        <div  className="bg-white flex items-center justify-center p-5 mr-10 ml-10 rounded-xl">
-            <div>
-                <h1 className="font-bold text-xl text-center m-5" >Se connecter</h1>
-                <form onSubmit={handleSubmit}>
-                    <div className="bg-gray-200 p-2 rounded-sm m-2" >
-                        <input
-                            type="mail"
-                            value={mail}
-                            onChange={(e) => setEmail(e.target.value)}
-                            placeholder="Email"
-                            required
-                        />
-                    </div>
-                    <div className="bg-gray-200 p-2 rounded-sm m-2">
-                        <input
-                            type="password"
-                            value={password}
-                            onChange={(e) => setPassword(e.target.value)}
-                            placeholder="Mot de passe"
-                            required
-                        />
-                    </div >
+        <div className="mx-auto max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl px-4">
+            <div className="flex flex-col bg-(--middleground) px-8 py-8 rounded-lg border border-(--foreground) shadow-md items-center">
+                <h1 className="text-3xl font-bold mb-4 text-(--text)">Se connecter</h1>
+                <form onSubmit={handleSubmit} className="flex flex-col flex-wrap space-y-4 w-md">
+                    <input className="bg-white p-2 rounded border border-(--foreground) focus:border-(--accent) outline-none"
+                        type="mail"
+                        value={mail}
+                        onChange={(e) => setEmail(e.target.value)}
+                        placeholder="Adresse email"
+                        required
+                    />
+                    <input className="bg-white p-2 rounded border border-(--foreground) focus:border-(--accent) outline-none"
+                        type="password"
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
+                        placeholder="Mot de passe"
+                        required
+                    />
                     {error && <p style={{ color: 'red' }}>{error}</p>}
-                    <div>
-                        <button className="border-1 rounded-sm m-2 p-2 hover:bg-gray-200 hover:border-gray-200" type="submit">Se connecter</button>
-                        <a className="border-1 rounded-sm m-2 p-2.5 hover:bg-gray-200 hover:border-gray-200" href="login/register">Créer un compte</a>
+                    <div className="flex flex-col gap-2 md:justify-center items-center space-y-2 md:space-y-0 md:space-x-4">
+                        <button className="cursor-pointer text-(--white) shadow bg-(--accent) duration-200 hover:bg-(--accent-lighter) font-bold uppercase rounded px-4 py-2 active:shadow-none w-fit" type="submit">
+                            Se connecter</button>
+                        <p className='text-(--white)'>Ou bien <Link className="cursor-pointer text-(--white) underline duration-200 hover:text-(--accent-lighter)"
+                            href="/login/register">se créer un compte</Link></p>
+
                     </div>
                 </form>
             </div>

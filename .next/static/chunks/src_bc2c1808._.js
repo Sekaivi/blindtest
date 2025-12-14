@@ -18,7 +18,7 @@ function Search(param) {
     let { type } = param;
     _s();
     const [query, setQuery] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
-    const [limit, setLimit] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(25);
+    const [limit, setLimit] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(10);
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
     const handleSubmit = async (e)=>{
         e.preventDefault();
@@ -49,53 +49,61 @@ function Search(param) {
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
         onSubmit: handleSubmit,
-        className: "flex items-end",
+        className: "flex flex-col items-start space-y-4",
         children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                type: "text",
-                value: query,
-                onChange: (e)=>setQuery(e.target.value),
-                placeholder: "Rechercher",
-                className: "border p-2 rounded-l"
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "flex flex-col gap-2 w-full",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                    type: "text",
+                    value: query,
+                    onChange: (e)=>setQuery(e.target.value),
+                    placeholder: "Rechercher",
+                    className: "bg-(--white) text-(--black) rounded px-4 py-2 placeholder-(--gray) border border-(--gray) focus:border-(--accent) outline-none"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/blindtestOptions/Search.jsx",
+                    lineNumber: 38,
+                    columnNumber: 17
+                }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/blindtestOptions/Search.jsx",
-                lineNumber: 36,
+                lineNumber: 37,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "flex flex-col gap-2",
+                className: "flex flex-col gap-2 w-full",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                        className: "text-(--text)",
                         children: "Nombre de musique chargées"
                     }, void 0, false, {
                         fileName: "[project]/src/components/blindtestOptions/Search.jsx",
-                        lineNumber: 39,
-                        columnNumber: 17
+                        lineNumber: 43,
+                        columnNumber: 13
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                         type: "number",
                         value: limit,
                         onChange: (e)=>setLimit(e.target.value),
-                        placeholder: "Limite",
-                        className: "border p-2 rounded-l"
+                        placeholder: "Nombre de musiques",
+                        className: "bg-(--white) text-(--black) rounded px-4 py-2 placeholder-(--gray) border border-(--gray) focus:border-(--accent) outline-none"
                     }, void 0, false, {
                         fileName: "[project]/src/components/blindtestOptions/Search.jsx",
-                        lineNumber: 40,
+                        lineNumber: 44,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/blindtestOptions/Search.jsx",
-                lineNumber: 38,
+                lineNumber: 42,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                 type: "submit",
-                className: "bg-white text-black px-4 py-2 rounded-r",
-                children: "Créer mon blindtest :D"
+                className: "cursor-pointer text-nowrap self-center text-(--white) shadow bg-(--accent) duration-200 hover:bg-(--accent-lighter) border border-(--accent) hover:border-(--accent-lighter) font-bold uppercase rounded px-4 py-2 active:shadow-none w-fit",
+                children: "Créer mon blindtest"
             }, void 0, false, {
                 fileName: "[project]/src/components/blindtestOptions/Search.jsx",
-                lineNumber: 43,
+                lineNumber: 48,
                 columnNumber: 13
             }, this)
         ]
@@ -105,7 +113,7 @@ function Search(param) {
         columnNumber: 9
     }, this);
 }
-_s(Search, "HW4qIEVJFUIYIAFWwuAF1EGJxIc=", false, function() {
+_s(Search, "Y63tML5ha6/a8UoHpAZ1UG643OI=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"]
     ];
@@ -134,17 +142,15 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 function BlindtestLoader(param) {
-    let { size = 50, color = 'bg-(--accent)', speed = 2 } = param;
+    let { size = 50, color = 'bg-(--accent)', speed = 2, message = "Chargement de votre blindtest" } = param;
     _s();
     const shouldReduce = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$utils$2f$reduced$2d$motion$2f$use$2d$reduced$2d$motion$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useReducedMotion"])();
-    const baseHeight = size * 0.4 // hauteur mini (40% de la taille)
-    ;
-    const fullHeight = size // hauteur max
-    ;
+    const baseHeight = size * 0.4;
+    const fullHeight = size;
     const barWidth = size / 3;
     const barStyle = {
         width: "".concat(barWidth, "px"),
-        borderRadius: '6px'
+        borderRadius: '10px'
     };
     const variants = {
         animate: (i)=>({
@@ -169,37 +175,37 @@ function BlindtestLoader(param) {
             })
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "flex flex-col items-center justify-center p-4 px-20   bg-[var(--middleground)] shadow-md border border-solid border-[var(--foreground)] rounded-[10px]",
+        className: "flex flex-col items-center justify-center p-4 px-20   bg-(--middleground) shadow-md border border-solid border-(--foreground) rounded-lg   mx-auto max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "mb-3 text-center",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                         className: "sr-only",
-                        children: "Chargement de votre blindtest"
+                        children: message
                     }, void 0, false, {
                         fileName: "[project]/src/components/Loading.jsx",
-                        lineNumber: 32,
+                        lineNumber: 40,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                         className: "text-xl font-medium text-(--text) zalando-sans-expanded-regular",
-                        children: "Chargement de votre blindtest"
+                        children: message
                     }, void 0, false, {
                         fileName: "[project]/src/components/Loading.jsx",
-                        lineNumber: 33,
+                        lineNumber: 41,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/Loading.jsx",
-                lineNumber: 31,
+                lineNumber: 39,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 role: "status",
                 "aria-live": "polite",
-                "aria-label": "Chargement de votre blindtest",
+                "aria-label": message,
                 className: "flex items-center gap-2 h-16 justify-center",
                 children: [
                     0,
@@ -213,7 +219,7 @@ function BlindtestLoader(param) {
                         className: "".concat(color)
                     }, i, false, {
                         fileName: "[project]/src/components/Loading.jsx",
-                        lineNumber: 46,
+                        lineNumber: 54,
                         columnNumber: 25
                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
                         custom: i,
@@ -223,12 +229,12 @@ function BlindtestLoader(param) {
                         className: "".concat(color, " origin-bottom")
                     }, i, false, {
                         fileName: "[project]/src/components/Loading.jsx",
-                        lineNumber: 52,
+                        lineNumber: 60,
                         columnNumber: 25
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/src/components/Loading.jsx",
-                lineNumber: 38,
+                lineNumber: 46,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -236,13 +242,13 @@ function BlindtestLoader(param) {
                 children: "Veuillez patienter..."
             }, void 0, false, {
                 fileName: "[project]/src/components/Loading.jsx",
-                lineNumber: 64,
+                lineNumber: 72,
                 columnNumber: 13
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/Loading.jsx",
-        lineNumber: 29,
+        lineNumber: 35,
         columnNumber: 9
     }, this);
 }
@@ -278,85 +284,101 @@ const TrackAudio = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$proje
     let { track, visible } = param;
     _s();
     const [isPlaying, setIsPlaying] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
-    const [audioProgress, setAudioProgress] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0); // 0..100
+    const [audioProgress, setAudioProgress] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
     const [duration, setDuration] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
-    // Sync src quand track change (sécurise si parent ne set pas src)
+    const [isDragging, setIsDragging] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const barRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
+    const intervalRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null); // NEW — interval 1s
+    // Sync src quand track change
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "TrackAudio.useEffect": ()=>{
             if (!(ref === null || ref === void 0 ? void 0 : ref.current)) return;
             const audio = ref.current;
-            if (track === null || track === void 0 ? void 0 : track.preview) {
-                if (audio.src !== track.preview) audio.src = track.preview;
+            if ((track === null || track === void 0 ? void 0 : track.preview) && audio.src !== track.preview) {
+                audio.src = track.preview;
             }
-        // ne pas autoplay ici ; le parent contrôle play()
         }
     }["TrackAudio.useEffect"], [
         track,
         ref
     ]);
-    // Events : timeupdate, loadedmetadata, play/pause
+    // Gestion des events play/pause + loadedmetadata
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "TrackAudio.useEffect": ()=>{
             if (!(ref === null || ref === void 0 ? void 0 : ref.current)) return;
             const audio = ref.current;
-            const onTimeUpdate = {
-                "TrackAudio.useEffect.onTimeUpdate": ()=>{
-                    if (!audio.duration || isNaN(audio.duration)) {
-                        setAudioProgress(0);
-                        return;
-                    }
-                    const pct = audio.currentTime / audio.duration * 100;
-                    setAudioProgress(pct);
-                }
-            }["TrackAudio.useEffect.onTimeUpdate"];
             const onLoaded = {
                 "TrackAudio.useEffect.onLoaded": ()=>{
                     setDuration(audio.duration || 0);
-                    onTimeUpdate();
                 }
             }["TrackAudio.useEffect.onLoaded"];
             const onPlay = {
-                "TrackAudio.useEffect.onPlay": ()=>setIsPlaying(true)
+                "TrackAudio.useEffect.onPlay": ()=>{
+                    setIsPlaying(true);
+                    // NEW — démarrer un timer 1s
+                    clearInterval(intervalRef.current);
+                    intervalRef.current = setInterval({
+                        "TrackAudio.useEffect.onPlay": ()=>{
+                            if (!audio.duration || isDragging) return;
+                            const pct = audio.currentTime / audio.duration * 100;
+                            setAudioProgress(pct);
+                        }
+                    }["TrackAudio.useEffect.onPlay"], 999);
+                }
             }["TrackAudio.useEffect.onPlay"];
             const onPause = {
-                "TrackAudio.useEffect.onPause": ()=>setIsPlaying(false)
+                "TrackAudio.useEffect.onPause": ()=>{
+                    setIsPlaying(false);
+                    clearInterval(intervalRef.current);
+                }
             }["TrackAudio.useEffect.onPause"];
-            audio.addEventListener("timeupdate", onTimeUpdate);
             audio.addEventListener("loadedmetadata", onLoaded);
             audio.addEventListener("play", onPlay);
             audio.addEventListener("pause", onPause);
-            // cleanup
             return ({
                 "TrackAudio.useEffect": ()=>{
-                    audio.removeEventListener("timeupdate", onTimeUpdate);
                     audio.removeEventListener("loadedmetadata", onLoaded);
                     audio.removeEventListener("play", onPlay);
                     audio.removeEventListener("pause", onPause);
+                    clearInterval(intervalRef.current);
                 }
             })["TrackAudio.useEffect"];
         }
     }["TrackAudio.useEffect"], [
-        ref
+        ref,
+        isDragging
     ]);
+    // PLAY / PAUSE
     const togglePlay = ()=>{
         if (!(ref === null || ref === void 0 ? void 0 : ref.current)) return;
         const audio = ref.current;
-        if (audio.paused) {
-            audio.play();
-        } else {
-            audio.pause();
-        }
-    // isPlaying sera mis à jour par les handlers play/pause ci-dessus
+        audio.paused ? audio.play() : audio.pause();
     };
-    const handleSeek = (e)=>{
-        if (!(ref === null || ref === void 0 ? void 0 : ref.current) || !duration) return;
-        const val = Number(e.target.value); // 0..100
-        const newTime = val / 100 * duration;
+    // ----------- DRAG SEEK -----------
+    const handleDrag = (e)=>{
+        if (!barRef.current || !ref.current || !duration) return;
+        const rect = barRef.current.getBoundingClientRect();
+        const x = Math.min(Math.max(e.clientX - rect.left, 0), rect.width);
+        const pct = x / rect.width * 100;
+        setAudioProgress(pct);
+    };
+    const stopDrag = (e)=>{
+        if (!barRef.current || !ref.current || !duration) return;
+        document.removeEventListener("mousemove", handleDrag);
+        document.removeEventListener("mouseup", stopDrag);
+        setIsDragging(false);
+        const rect = barRef.current.getBoundingClientRect();
+        const x = Math.min(Math.max(e.clientX - rect.left, 0), rect.width);
+        const newTime = x / rect.width * duration;
         ref.current.currentTime = newTime;
-        setAudioProgress(val);
     };
-    // On affiche l'élément audio quoi qu'il arrive (pour que la lecture continue)
-    // mais l'UI (bouton + barre) n'apparaît que si visible === true
+    const startDrag = (e)=>{
+        setIsDragging(true);
+        handleDrag(e);
+        document.addEventListener("mousemove", handleDrag);
+        document.addEventListener("mouseup", stopDrag);
+    };
+    // UI only when visible
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "w-full mx-4",
         children: [
@@ -367,12 +389,12 @@ const TrackAudio = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$proje
                     type: "audio/mpeg"
                 }, void 0, false, {
                     fileName: "[project]/src/components/TrackAudio.js",
-                    lineNumber: 81,
+                    lineNumber: 106,
                     columnNumber: 17
                 }, ("TURBOPACK compile-time value", void 0))
             }, void 0, false, {
                 fileName: "[project]/src/components/TrackAudio.js",
-                lineNumber: 80,
+                lineNumber: 105,
                 columnNumber: 13
             }, ("TURBOPACK compile-time value", void 0)),
             visible && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -392,8 +414,8 @@ const TrackAudio = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$proje
                                     strokeWidth: "1px"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/TrackAudio.js",
-                                    lineNumber: 94,
-                                    columnNumber: 42
+                                    lineNumber: 120,
+                                    columnNumber: 33
                                 }, ("TURBOPACK compile-time value", void 0)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$play$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Play$3e$__["Play"], {
                                     size: 22,
                                     color: "var(--gray)",
@@ -401,99 +423,77 @@ const TrackAudio = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$proje
                                     strokeWidth: "1px"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/TrackAudio.js",
-                                    lineNumber: 94,
-                                    columnNumber: 121
+                                    lineNumber: 122,
+                                    columnNumber: 33
                                 }, ("TURBOPACK compile-time value", void 0))
                             }, void 0, false, {
                                 fileName: "[project]/src/components/TrackAudio.js",
-                                lineNumber: 89,
+                                lineNumber: 114,
                                 columnNumber: 25
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "relative w-full select-none",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "relative h-3 rounded bg-purple-300 overflow-hidden",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "absolute h-3 rounded transition-all duration-300 bg-(--accent)",
-                                            style: {
-                                                width: "".concat(audioProgress, "%")
-                                            }
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/TrackAudio.js",
-                                            lineNumber: 102,
-                                            columnNumber: 33
-                                        }, ("TURBOPACK compile-time value", void 0))
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/TrackAudio.js",
-                                        lineNumber: 101,
-                                        columnNumber: 29
-                                    }, ("TURBOPACK compile-time value", void 0)),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                        type: "range",
-                                        min: "0",
-                                        max: "100",
-                                        value: Math.max(0, Math.min(100, audioProgress)),
-                                        onChange: handleSeek,
-                                        className: "absolute top-0 left-0 w-full h-3 opacity-0 cursor-pointer",
-                                        style: {
-                                            WebkitAppearance: "none"
-                                        }
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/TrackAudio.js",
-                                        lineNumber: 109,
-                                        columnNumber: 29
-                                    }, ("TURBOPACK compile-time value", void 0))
-                                ]
-                            }, void 0, true, {
+                                ref: barRef,
+                                className: "relative w-full h-3 bg-purple-300 rounded cursor-pointer select-none",
+                                onMouseDown: startDrag,
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "absolute h-3 rounded bg-(--accent) ".concat(isDragging ? "" : "transition-all duration-500"),
+                                    style: {
+                                        width: "".concat(audioProgress, "%")
+                                    }
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/TrackAudio.js",
+                                    lineNumber: 132,
+                                    columnNumber: 29
+                                }, ("TURBOPACK compile-time value", void 0))
+                            }, void 0, false, {
                                 fileName: "[project]/src/components/TrackAudio.js",
-                                lineNumber: 98,
+                                lineNumber: 127,
                                 columnNumber: 25
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/TrackAudio.js",
-                        lineNumber: 87,
+                        lineNumber: 111,
                         columnNumber: 21
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "flex justify-between text-xs text-(--gray)",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                children: ref.current ? formatTime(ref.current.currentTime) : "00:00"
+                                children: formatTime(ref.current ? ref.current.currentTime : 0)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/TrackAudio.js",
-                                lineNumber: 123,
-                                columnNumber: 13
+                                lineNumber: 143,
+                                columnNumber: 25
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 children: formatTime(duration)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/TrackAudio.js",
-                                lineNumber: 126,
+                                lineNumber: 144,
                                 columnNumber: 25
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/TrackAudio.js",
-                        lineNumber: 122,
+                        lineNumber: 142,
                         columnNumber: 21
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/TrackAudio.js",
-                lineNumber: 86,
+                lineNumber: 110,
                 columnNumber: 17
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/TrackAudio.js",
-        lineNumber: 78,
+        lineNumber: 104,
         columnNumber: 9
     }, ("TURBOPACK compile-time value", void 0));
-}, "nZNh14m7E0v1mZoy2SBZKOdc8gk=")), "nZNh14m7E0v1mZoy2SBZKOdc8gk=");
+}, "wKqCW4g+XbX2ZjRiBNEHXeEPpkE=")), "wKqCW4g+XbX2ZjRiBNEHXeEPpkE=");
 _c1 = TrackAudio;
-// utilitaire local pour formatage hh:mm:ss -> mm:ss
+// Format mm:ss
 function formatTime(sec) {
     if (!sec || isNaN(sec)) return "00:00";
     const s = Math.floor(sec);
@@ -596,14 +596,15 @@ __turbopack_context__.s([
     "default",
     ()=>VSMode
 ]);
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/node_modules/next/dist/build/polyfills/process.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$socket$2e$io$2d$client$2f$build$2f$esm$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/socket.io-client/build/esm/index.js [app-client] (ecmascript) <locals>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Loading$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/Loading.jsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$TrackAudio$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/TrackAudio.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Track$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/Track.jsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/navigation.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$request$2f$search$2d$params$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/request/search-params.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$os$2d$browserify$2f$browser$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/os-browserify/browser.js [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
@@ -614,8 +615,12 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 ;
+;
+;
 function VSMode() {
+    var _socketRef_current, _players_socketRef_current_id, _players_socketRef_current_id1, _socketRef_current1, _players_socketRef_current_id2, _socketRef_current2, _players_socketRef_current_id3, _socketRef_current3;
     _s();
+    const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
     // CLASSEMENT EN FIN DE PARTIE !!!
     // state machine
     const GAME_STATE = {
@@ -625,7 +630,6 @@ function VSMode() {
         GAME_OVER: "game_over",
         WAITING: "waiting"
     };
-    const SOCKET_SERVER_URL = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].env.NEXT_PUBLIC_SOCKET_URL || "http://localhost:10000";
     const [isConnected, setIsConnected] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const [pseudo, setPseudo] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
     const [players, setPlayers] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])({});
@@ -633,13 +637,17 @@ function VSMode() {
     const [gameState, setGameState] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false); // à mettre à jour en fonction du serveur uniquement
     const [songs, setSongs] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
     const [currentSong, setCurrentSong] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
-    // POUR LE CHAT D'UNE ROOM !!
-    const [message, setMessages] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
+    const [chatMessages, setChatMessages] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
+    const typeTracksRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
+    const tracksQueryRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
+    const tracksLimitRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
+    // pour initialiser la recherche des musiques:
     // pour garder une ref sur les inputs de reponse
     const titleAnswerRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     const artistAnswerRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     const socketRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     const playersRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(players);
+    const chatMessageInputRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     // variables pour l'interface ?
     const [points, setPoints] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
     const [pointsPopup, setPointsPopup] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
@@ -675,6 +683,19 @@ function VSMode() {
             return updatedPlayers;
         });
     };
+    const handleTextareaResize = ()=>{
+        const textarea = chatMessageInputRef.current;
+        if (textarea) {
+            textarea.style.height = 'auto';
+            textarea.style.height = textarea.scrollHeight + 'px';
+        }
+    };
+    const hanldleChatKeyDown = (e)=>{
+        if (e.key === 'Enter' && !e.shiftKey) {
+            e.preventDefault();
+            sendChatMessage(e);
+        }
+    };
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "VSMode.useEffect": ()=>{
             if (audioRef.current) {
@@ -693,24 +714,10 @@ function VSMode() {
     }["VSMode.useEffect"], [
         players
     ]);
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
-        "VSMode.useEffect": ()=>{
-            console.log(gameState);
-        }
-    }["VSMode.useEffect"], [
-        gameState
-    ]);
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
-        "VSMode.useEffect": ()=>{
-            console.log("Toutes les réponses :", answers);
-        }
-    }["VSMode.useEffect"], [
-        answers
-    ]);
     // sockets communication ^^
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "VSMode.useEffect": ()=>{
-            const socket = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$socket$2e$io$2d$client$2f$build$2f$esm$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["io"])(SOCKET_SERVER_URL, {
+            const socket = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$socket$2e$io$2d$client$2f$build$2f$esm$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["io"])("http://localhost:3001", {
                 path: "/socket.io",
                 transports: [
                     "websocket"
@@ -728,7 +735,10 @@ function VSMode() {
                     setRoomCode(roomCode);
                     // ajouter des parametres lors de la creation d'une room pour permettre plus de choses ?
                     try {
-                        const tracks = await fetchTracks("search", "disney", 5);
+                        const typeTracks = typeTracksRef.current.value;
+                        const trackQuery = tracksQueryRef.current.value;
+                        const tracksLimit = tracksLimitRef.current.value;
+                        const tracks = await fetchTracks(typeTracks, trackQuery, tracksLimit);
                         setSongs(tracks);
                         socket.emit('setTrackList', tracks);
                     } catch (err) {
@@ -746,6 +756,12 @@ function VSMode() {
                     console.log(error);
                 }
             }["VSMode.useEffect"]);
+            socket.on('forceDisconnect', {
+                "VSMode.useEffect": ()=>{
+                    console.log('Erreur');
+                    router.push("/jeu");
+                }
+            }["VSMode.useEffect"]);
             // mise à jour des JOUEURS
             socket.on("currentPlayers", {
                 "VSMode.useEffect": (serverPlayers)=>{
@@ -755,15 +771,15 @@ function VSMode() {
             }["VSMode.useEffect"]);
             socket.on("playerHasAnswered", {
                 "VSMode.useEffect": (data)=>{
-                    const [playerId, answerState] = data;
+                    const [playerId, answerState, playerscore] = data;
                     updatePlayerProperty(playerId, 'answered', answerState);
+                    updatePlayerProperty(socket.id, 'score', playerscore);
                 }
             }["VSMode.useEffect"]);
             socket.on('setGameState', {
                 "VSMode.useEffect": (serverGameState)=>{
                     const currentPlayers = playersRef.current;
                     setGameState(serverGameState);
-                    console.log('Game state update from server: ' + serverGameState);
                     if (serverGameState === GAME_STATE.PLAYING) {
                         handleStart();
                     }
@@ -786,10 +802,8 @@ function VSMode() {
                 }
             }["VSMode.useEffect"]);
             socket.on('nextSongInBlindtest', {
-                "VSMode.useEffect": ()=>{
-                    setCurrentSong({
-                        "VSMode.useEffect": (p)=>p + 1
-                    }["VSMode.useEffect"]);
+                "VSMode.useEffect": (serverCurrentSong)=>{
+                    setCurrentSong(serverCurrentSong);
                     const currentPlayers = playersRef.current;
                     titleAnswerRef.current.value = "";
                     artistAnswerRef.current.value = "";
@@ -817,16 +831,18 @@ function VSMode() {
                         setAnswerMessage('Tout juste, bravo ! +11pts');
                         setAnswerMessageColor('text-[var(--valid)]');
                     } else if (correctArtist) {
-                        setAnswerMessage("Tu as trouvé l'artiste mais pas la chanson. +5pts");
+                        setAnswerMessage("Tu as trouvé l'artiste mais pas la chanson. +" + pointsGained + 'pts');
                         setAnswerMessageColor('text-[var(--valid)]');
                     } else if (correctTitle) {
-                        setAnswerMessage("Tu as trouvé la chanson mais pas l'artiste. +5pts");
+                        setAnswerMessage("Tu as trouvé la chanson mais pas l'artiste. +" + pointsGained + 'pts');
                         setAnswerMessageColor('text-[var(--valid)]');
                     } else {
                         setAnswerMessage("Aucune bonne réponse... +0pts");
                         setAnswerMessageColor('text-[var(--error)]');
                     }
+                    updatePlayerProperty(socket.id, 'score', totalPoints);
                     setPoints(totalPoints);
+                    console.log(pointsGained);
                     setPointsPopup('+' + pointsGained);
                 }
             }["VSMode.useEffect"]);
@@ -835,7 +851,24 @@ function VSMode() {
                     handleAnswer();
                 }
             }["VSMode.useEffect"]);
-            return ({
+            socket.on('newChatMessage', {
+                "VSMode.useEffect": (message)=>{
+                    setChatMessages({
+                        "VSMode.useEffect": (prevMessages)=>[
+                                ...prevMessages,
+                                message
+                            ]
+                    }["VSMode.useEffect"]);
+                }
+            }["VSMode.useEffect"]);
+            // ajouter une fonction pour recuperer toutes les données sur l'état de la room...?
+            /* 
+        socket.on('roomData', (data) => {
+            if (data.messages) {
+                setMessages(data.messages);
+            }
+        });
+        */ return ({
                 "VSMode.useEffect": ()=>{
                     setIsConnected(false);
                     socket.disconnect();
@@ -844,8 +877,10 @@ function VSMode() {
         }
     }["VSMode.useEffect"], []);
     // fonctions pour les sockets
-    const createRoom = ()=>{
+    const createRoom = (e)=>{
+        e.preventDefault();
         if (!pseudo.trim()) return alert("Entrez un pseudo !");
+        if (!tracksQueryRef.current.value.trim()) return alert('Vous devez préciser votre recherche !');
         socketRef.current.emit("createRoom", pseudo);
     };
     const joinRoom = (e)=>{
@@ -881,6 +916,15 @@ function VSMode() {
     };
     const startGame = ()=>{
         socketRef.current.emit('startGame');
+    };
+    const sendChatMessage = (e)=>{
+        e.preventDefault();
+        handleTextareaResize();
+        const text = chatMessageInputRef.current.value.trim();
+        if (socketRef.current && text) {
+            socketRef.current.emit('chatMessage', text);
+            chatMessageInputRef.current.value = '';
+        }
     };
     // CONCERNANT LE TIMER !!
     //
@@ -968,606 +1012,924 @@ function VSMode() {
     // la page
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                children: "Blindtest en VS !"
-            }, void 0, false, {
-                fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                lineNumber: 330,
-                columnNumber: 13
-            }, this),
-            roomCode && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                children: [
-                    "Identifiant de la room: ",
-                    roomCode
-                ]
-            }, void 0, true, {
-                fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                lineNumber: 332,
-                columnNumber: 17
-            }, this),
             !roomCode && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "flex flex-col items-center gap-4",
-                children: !isConnected ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            children: "Connexion au serveur en cours..."
+                className: "mx-auto max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl px-4",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "flex flex-col items-center justify-center bg-(--middleground) px-8 py-4 gap-4 rounded-lg border border-(--foreground) shadow-md",
+                    children: !isConnected ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Loading$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                            message: "Connexion au serveur en cours"
                         }, void 0, false, {
                             fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                            lineNumber: 342,
-                            columnNumber: 29
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Loading$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
-                            fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                            lineNumber: 343,
-                            columnNumber: 29
+                            lineNumber: 384,
+                            columnNumber: 33
                         }, this)
-                    ]
-                }, void 0, true) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                            type: "text",
-                            placeholder: "Votre pseudo",
-                            value: pseudo,
-                            onChange: (e)=>setPseudo(e.target.value),
-                            className: "bg-white text-black px-2 py-1 rounded"
-                        }, void 0, false, {
-                            fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                            lineNumber: 347,
-                            columnNumber: 29
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                            className: "bg-white px-4 py-1 text-black",
-                            onClick: createRoom,
-                            children: "Créer une partie"
-                        }, void 0, false, {
-                            fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                            lineNumber: 354,
-                            columnNumber: 29
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            children: "Ou bien en rejoindre une:"
-                        }, void 0, false, {
-                            fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                            lineNumber: 355,
-                            columnNumber: 29
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
-                            className: "flex gap-2",
-                            onSubmit: joinRoom,
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                    className: "bg-white text-black",
-                                    type: "text",
-                                    name: "roomCode"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                    lineNumber: 357,
-                                    columnNumber: 33
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                    className: "bg-white px-4 py-1 text-black",
-                                    type: "submit",
-                                    children: "Rejoindre"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                    lineNumber: 358,
-                                    columnNumber: 33
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                            lineNumber: 356,
-                            columnNumber: 29
-                        }, this)
-                    ]
-                }, void 0, true)
-            }, void 0, false, {
-                fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                lineNumber: 337,
-                columnNumber: 17
-            }, this),
-            roomCode && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
-                className: "mx-auto max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl px-8",
-                children: [
-                    roomCode && gameState === GAME_STATE.WAITING && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex flex-col items-center p-8 bg-[var(--middleground)] rounded-lg",
+                    }, void 0, false) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
                         children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "flex flex-col gap-4 w-md items-center justify-center",
                                 children: [
-                                    "Salle ",
-                                    roomCode,
-                                    " - En attente"
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                lineNumber: 371,
-                                columnNumber: 29
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                children: [
-                                    "Yo ",
-                                    players[socketRef.current.id].pseudo,
-                                    " ! On attend les autres joueurs ?"
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                lineNumber: 372,
-                                columnNumber: 29
-                            }, this),
-                            players[socketRef.current.id] && players[socketRef.current.id].roomLeader ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        children: "Vous êtes le chef de salle !"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                        lineNumber: 375,
-                                        columnNumber: 37
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                        onClick: startGame,
-                                        className: "mt-4 bg-[var(--valid)] text-white font-bold rounded px-4 py-2",
-                                        children: "Lancer la partie !"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                        lineNumber: 376,
-                                        columnNumber: 37
-                                    }, this)
-                                ]
-                            }, void 0, true) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                children: "En attente du chef de salle pour lancer la partie..."
-                            }, void 0, false, {
-                                fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                lineNumber: 381,
-                                columnNumber: 33
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                        lineNumber: 370,
-                        columnNumber: 25
-                    }, this),
-                    roomCode && gameState !== GAME_STATE.WAITING && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "flex flex-col bg-[var(--middleground)] px-8 py-4 rounded-lg border border-[var(--foreground)] shadow-md",
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "flex flex-row justify-between w-[100%] mb-4",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "flex max-w-fit bg-[var(--middleground)] px-4 py-2 rounded-lg border border-[var(--foreground)] shadow",
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "relative flex items-center",
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                        className: "text-(--gray) whitespace-nowrap",
-                                                        children: [
-                                                            points,
-                                                            " pts"
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                                        lineNumber: 392,
-                                                        columnNumber: 45
-                                                    }, this),
-                                                    pointsPopup && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                        className: "ml-2 absolute points-popup",
-                                                        children: pointsPopup
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                                        lineNumber: 393,
-                                                        columnNumber: 61
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "flex items-center flex-col gap-2",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                                className: "text-black dark:text-white text-lg font-bold",
+                                                children: "Votre pseudo:"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                                lineNumber: 390,
+                                                columnNumber: 41
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                                type: "text",
+                                                placeholder: "Peusdo...  ",
+                                                value: pseudo,
+                                                onChange: (e)=>setPseudo(e.target.value),
+                                                className: "bg-white text-black px-4 py-2 rounded border border-gray-400"
+                                            }, void 0, false, {
                                                 fileName: "[project]/src/app/jeu/vs/VSMode.js",
                                                 lineNumber: 391,
                                                 columnNumber: 41
                                             }, this)
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                            lineNumber: 390,
-                                            columnNumber: 37
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$TrackAudio$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                            ref: audioRef,
-                                            track: songs[currentSong],
-                                            visible: gameState === GAME_STATE.SHOW_ANSWER || gameState === GAME_STATE.GAME_OVER
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                            lineNumber: 397,
-                                            columnNumber: 37
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "flex max-w-fit bg-[var(--middleground)] px-4 py-2 rounded-lg border border-[var(--foreground)] shadow",
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "relative flex items-center text-right",
-                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-(--gray) whitespace-nowrap",
-                                                    children: [
-                                                        currentSong + 1,
-                                                        " / ",
-                                                        songs.length
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                                    lineNumber: 405,
-                                                    columnNumber: 45
-                                                }, this)
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                                lineNumber: 404,
-                                                columnNumber: 41
-                                            }, this)
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                            lineNumber: 403,
-                                            columnNumber: 37
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                    lineNumber: 389,
-                                    columnNumber: 33
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$TrackAudio$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                    ref: audioRef,
-                                    track: songs[currentSong],
-                                    visible: gameState === GAME_STATE.SHOW_ANSWER || gameState === GAME_STATE.GAME_OVER
-                                }, void 0, false, {
-                                    fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                    lineNumber: 410,
-                                    columnNumber: 33
-                                }, this),
-                                (gameState === GAME_STATE.PLAYING || gameState === GAME_STATE.PAUSED) && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "",
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                        lineNumber: 389,
+                                        columnNumber: 37
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
+                                        onSubmit: (e)=>createRoom(e),
+                                        className: "px-4 py-2 w-max flex flex-col flex-wrap gap-4",
                                         children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "font-bold text-center text-xl text-[var(--text)]",
-                                                children: formatTime(timeLeft)
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                                className: "text-xl text-black dark:text-white font-bold",
+                                                children: "Pour créer une room:"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                                lineNumber: 416,
-                                                columnNumber: 45
+                                                lineNumber: 401,
+                                                columnNumber: 41
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "relative h-3 rounded bg-purple-300",
-                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "absolute h-3 rounded transition-all duration-500 ".concat(timeLeft <= 5 ? "bg-[var(--accent-lighter)]" : "bg-[var(--accent)]"),
-                                                    style: {
-                                                        width: "".concat(progressBar, "%")
-                                                    }
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                                    lineNumber: 419,
-                                                    columnNumber: 49
-                                                }, this)
+                                                className: "flex flex-col gap-2",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                                        className: "text-black dark:text-white",
+                                                        children: "Votre séléction ?"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                                        lineNumber: 403,
+                                                        columnNumber: 45
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
+                                                        ref: typeTracksRef,
+                                                        defaultValue: 'search',
+                                                        className: "bg-white text-black px-4 py-2 rounded cursor-pointer",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                                value: 'playlist',
+                                                                children: "Playlist"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                                                lineNumber: 405,
+                                                                columnNumber: 49
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                                value: 'genre',
+                                                                children: "Genre"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                                                lineNumber: 406,
+                                                                columnNumber: 49
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                                value: 'search',
+                                                                children: "Mot-clé"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                                                lineNumber: 407,
+                                                                columnNumber: 49
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                                        lineNumber: 404,
+                                                        columnNumber: 45
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                                lineNumber: 402,
+                                                columnNumber: 41
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "display flex flex-wrap gap-4 items-center justify-center",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "flex flex-col gap-2",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                                                className: "text-black dark:text-white",
+                                                                children: "Votre recherche"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                                                lineNumber: 412,
+                                                                columnNumber: 49
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                                                type: "text",
+                                                                ref: tracksQueryRef,
+                                                                defaultValue: '',
+                                                                placeholder: "Rechercher",
+                                                                className: "bg-white text-black px-4 py-2 rounded"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                                                lineNumber: 413,
+                                                                columnNumber: 49
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                                        lineNumber: 411,
+                                                        columnNumber: 45
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "flex flex-col gap-2",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                                                className: "text-black dark:text-white",
+                                                                children: "Nombre de musique chargées"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                                                lineNumber: 417,
+                                                                columnNumber: 49
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                                                ref: tracksLimitRef,
+                                                                defaultValue: 25,
+                                                                type: "number",
+                                                                placeholder: "Limite",
+                                                                className: "bg-white text-black px-4 py-2 rounded"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                                                lineNumber: 418,
+                                                                columnNumber: 49
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                                        lineNumber: 416,
+                                                        columnNumber: 45
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                                lineNumber: 410,
+                                                columnNumber: 41
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                className: "cursor-pointer text-(--white) shadow bg-(--accent) duration-200 hover:bg-(--accent-lighter) font-bold uppercase rounded px-4 py-2 active:shadow-none",
+                                                type: "submit",
+                                                children: "Créer une partie"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                                lineNumber: 418,
-                                                columnNumber: 45
+                                                lineNumber: 422,
+                                                columnNumber: 41
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                        lineNumber: 415,
-                                        columnNumber: 41
+                                        lineNumber: 400,
+                                        columnNumber: 37
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                        className: "text-xl text-black dark:text-white font-bold",
+                                        children: "Ou bien pour en rejoindre une:"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                        lineNumber: 426,
+                                        columnNumber: 37
                                     }, this)
-                                }, void 0, false),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                    onClick: gameStateMessage[1],
-                                    className: "cursor-pointer bg-[var(--white)] mx-auto shadow-md my-4 text-[var(--accent)] duration-200 hover:text-[var(--accent-lighter)] font-bold uppercase rounded px-4 py-2 active:shadow-[none] active:bg-gray-50",
-                                    children: gameStateMessage[0]
-                                }, void 0, false, {
-                                    fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                    lineNumber: 430,
-                                    columnNumber: 33
-                                }, this),
-                                (gameState === GAME_STATE.PLAYING || gameState === GAME_STATE.SHOW_ANSWER || gameState === GAME_STATE.PAUSED) && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "flex justify-center items-center mb-4",
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: answerMessageColor,
-                                                children: answerMessage
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                lineNumber: 388,
+                                columnNumber: 33
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
+                                className: "flex gap-2",
+                                onSubmit: joinRoom,
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                        className: "bg-white text-black rounded",
+                                        type: "text",
+                                        name: "roomCode"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                        lineNumber: 429,
+                                        columnNumber: 37
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                        className: "cursor-pointer text-(--white) shadow bg-(--accent) duration-200 hover:bg-(--accent-lighter) font-bold uppercase rounded px-4 py-2 active:shadow-none",
+                                        type: "submit",
+                                        children: "Rejoindre"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                        lineNumber: 430,
+                                        columnNumber: 37
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                lineNumber: 428,
+                                columnNumber: 33
+                            }, this)
+                        ]
+                    }, void 0, true)
+                }, void 0, false, {
+                    fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                    lineNumber: 379,
+                    columnNumber: 21
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                lineNumber: 378,
+                columnNumber: 17
+            }, this),
+            roomCode && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "text-black dark:text-white mx-auto max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl px-8",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "grid grid-cols-5 gap-4 content-start",
+                    children: [
+                        players && Object.keys(players).length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            id: "joueurs",
+                            className: "col-span-1",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "bg-[var(--middleground)] rounded-lg shadow-inner flex flex-col gap-4",
+                                children: [
+                                    roomCode && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "mx-4 mt-4 px-4 py-2 font-bold rounded",
+                                        children: [
+                                            "Room ID: ",
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "text-(--accent-darker)",
+                                                children: roomCode
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                                lineNumber: 441,
-                                                columnNumber: 45
+                                                lineNumber: 448,
+                                                columnNumber: 107
                                             }, this)
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                            lineNumber: 440,
-                                            columnNumber: 41
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
-                                            onSubmit: (e)=>{
-                                                e.preventDefault();
-                                                handleAnswer();
-                                            },
-                                            className: "flex flex-col flex-wrap gap-2",
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                        lineNumber: 448,
+                                        columnNumber: 45
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                        className: " mx-4 text-xl",
+                                        children: "Joueurs:"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                        lineNumber: 450,
+                                        columnNumber: 41
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "flex flex-col gap-2",
+                                        children: Object.entries(players).map((param, i)=>{
+                                            let [id, player] = param;
+                                            const bgColorClass = i % 2 === 0 ? 'bg-[var(--foreground)]' : 'bg-[var(--middleground)]';
+                                            return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "".concat(bgColorClass, " px-4 py-1"),
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                        className: "text-base",
+                                                        children: player.pseudo
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                                        lineNumber: 458,
+                                                        columnNumber: 61
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                        className: "text-sm",
+                                                        children: [
+                                                            "(Score : ",
+                                                            player.score,
+                                                            ")"
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                                        lineNumber: 459,
+                                                        columnNumber: 61
+                                                    }, this),
+                                                    player.answered && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                        className: "text-sm text-(--valid)",
+                                                        children: "A répondu"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                                        lineNumber: 461,
+                                                        columnNumber: 65
+                                                    }, this)
+                                                ]
+                                            }, id, true, {
+                                                fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                                lineNumber: 457,
+                                                columnNumber: 57
+                                            }, this);
+                                        })
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                        lineNumber: 451,
+                                        columnNumber: 41
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                lineNumber: 446,
+                                columnNumber: 37
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                            lineNumber: 445,
+                            columnNumber: 33
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            id: "jeu",
+                            className: "col-span-3",
+                            children: [
+                                roomCode && gameState === GAME_STATE.WAITING && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "flex flex-col items-center p-8 bg-[var(--middleground)] rounded-lg",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                            className: "font-bold",
                                             children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "flex gap-2 justify-center",
-                                                    children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "flex flex-col gap-0",
-                                                            children: [
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                                                    htmlFor: "musicTitle",
-                                                                    className: "text-[var(--text)]",
-                                                                    children: "Titre de la musique :"
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                                                    lineNumber: 453,
-                                                                    columnNumber: 53
-                                                                }, this),
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                                                    name: "musicTitle",
-                                                                    ref: titleAnswerRef,
-                                                                    className: "".concat(gameState === GAME_STATE.SHOW_ANSWER || gameState === GAME_STATE.GAME_OVER ? titleBox : 'bg-[var(--white)] text-[var(--black)] rounded px-4 py-2 placeholder-[var(--gray)] border border-[var(--gray)]'),
-                                                                    placeholder: "Votre réponse",
-                                                                    type: "text",
-                                                                    disabled: gameState !== GAME_STATE.PLAYING
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                                                    lineNumber: 454,
-                                                                    columnNumber: 53
-                                                                }, this)
-                                                            ]
-                                                        }, void 0, true, {
-                                                            fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                                            lineNumber: 452,
-                                                            columnNumber: 49
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "flex flex-col gap-0",
-                                                            children: [
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                                                    htmlFor: "artistName",
-                                                                    className: "text-[var(--text)]",
-                                                                    children: "Nom de l'artiste :"
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                                                    lineNumber: 468,
-                                                                    columnNumber: 53
-                                                                }, this),
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                                                    name: "artistName",
-                                                                    ref: artistAnswerRef,
-                                                                    className: "".concat(gameState === GAME_STATE.SHOW_ANSWER || gameState === GAME_STATE.GAME_OVER ? artistBox : 'bg-[var(--white)] text-[var(--black)] rounded px-4 py-2 placeholder-[var(--gray)] border border-[var(--gray)]'),
-                                                                    placeholder: "Votre réponse",
-                                                                    type: "text",
-                                                                    disabled: gameState !== GAME_STATE.PLAYING
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                                                    lineNumber: 469,
-                                                                    columnNumber: 53
-                                                                }, this)
-                                                            ]
-                                                        }, void 0, true, {
-                                                            fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                                            lineNumber: 467,
-                                                            columnNumber: 49
-                                                        }, this)
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                                    lineNumber: 451,
-                                                    columnNumber: 45
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                    type: "submit",
-                                                    disabled: gameState !== GAME_STATE.PLAYING,
-                                                    className: gameState === GAME_STATE.SHOW_ANSWER || gameState === GAME_STATE.PAUSED ? "hidden" : "cursor-pointer bg-[var(--white)] mx-auto shadow-md mt-4 text-[var(--accent)] duration-200 hover:text-[var(--accent-lighter)] font-bold uppercase rounded px-4 py-2 active:shadow-[none] active:bg-gray-50",
-                                                    children: "Confirmer"
+                                                "Salle ",
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-(--accent-lighter)",
+                                                    children: roomCode
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                                    lineNumber: 483,
-                                                    columnNumber: 45
+                                                    lineNumber: 476,
+                                                    columnNumber: 69
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                            lineNumber: 444,
+                                            lineNumber: 476,
+                                            columnNumber: 37
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "italic",
+                                            children: "En attente..."
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                            lineNumber: 477,
+                                            columnNumber: 37
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            children: [
+                                                "Hey ",
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-(--accent-lighter)",
+                                                    children: players[socketRef.current.id].pseudo
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                                    lineNumber: 478,
+                                                    columnNumber: 44
+                                                }, this),
+                                                " ! On attend les autres joueurs ?"
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                            lineNumber: 478,
+                                            columnNumber: 37
+                                        }, this),
+                                        players[socketRef.current.id] && players[socketRef.current.id].roomLeader ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                onClick: startGame,
+                                                className: "mt-4 cursor-pointer text-(--white) shadow bg-(--accent) duration-200 hover:bg-(--accent-lighter) font-bold uppercase rounded px-4 py-2 active:shadow-none",
+                                                children: "Lancer la partie !"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                                lineNumber: 481,
+                                                columnNumber: 45
+                                            }, this)
+                                        }, void 0, false) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            children: "En attente du chef de salle pour lancer la partie..."
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                            lineNumber: 486,
                                             columnNumber: 41
                                         }, this)
                                     ]
-                                }, void 0, true),
-                                (gameState === GAME_STATE.GAME_OVER || gameState === GAME_STATE.SHOW_ANSWER) && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "mt-4 mx-auto",
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Track$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                        track: songs[currentSong]
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                        lineNumber: 496,
-                                        columnNumber: 41
-                                    }, this)
-                                }, void 0, false, {
+                                }, void 0, true, {
                                     fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                    lineNumber: 495,
-                                    columnNumber: 37
+                                    lineNumber: 475,
+                                    columnNumber: 33
                                 }, this),
-                                gameState === GAME_STATE.GAME_OVER && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "flex justify-center items-center mb-4",
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: answerMessageColor,
-                                                children: answerMessage
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                                lineNumber: 503,
-                                                columnNumber: 45
-                                            }, this)
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                            lineNumber: 502,
-                                            columnNumber: 41
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "flex gap-4 items-start",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "flex flex-col gap-0",
-                                                    children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                                            htmlFor: "musicTitle",
-                                                            children: "Titre de la musique :"
-                                                        }, void 0, false, {
+                                roomCode && gameState !== GAME_STATE.WAITING && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "flex flex-col bg-[var(--middleground)] px-8 py-4 rounded-lg border border-[var(--foreground)] shadow-md",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "flex flex-row justify-between w-[100%] mb-4",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "flex max-w-fit bg-[var(--middleground)] px-4 py-2 rounded-lg border border-[var(--foreground)] shadow",
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "relative flex items-center",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                    className: "text-(--gray) whitespace-nowrap",
+                                                                    children: [
+                                                                        points,
+                                                                        " pts"
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                                                    lineNumber: 497,
+                                                                    columnNumber: 53
+                                                                }, this),
+                                                                pointsPopup && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                    className: "ml-2 absolute points-popup",
+                                                                    children: pointsPopup
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                                                    lineNumber: 498,
+                                                                    columnNumber: 69
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true, {
                                                             fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                                            lineNumber: 508,
+                                                            lineNumber: 496,
                                                             columnNumber: 49
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                                            name: "musicTitle",
-                                                            value: answers[currentSong].title,
-                                                            className: titleBox,
-                                                            placeholder: "votre réponse",
-                                                            type: "text",
-                                                            disabled: gameState !== GAME_STATE.PLAYING
+                                                        }, this)
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                                        lineNumber: 495,
+                                                        columnNumber: 45
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$TrackAudio$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                        ref: audioRef,
+                                                        track: songs[currentSong],
+                                                        visible: gameState === GAME_STATE.SHOW_ANSWER || gameState === GAME_STATE.GAME_OVER
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                                        lineNumber: 502,
+                                                        columnNumber: 45
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "flex max-w-fit bg-[var(--middleground)] px-4 py-2 rounded-lg border border-[var(--foreground)] shadow",
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "relative flex items-center text-right",
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                className: "text-(--gray) whitespace-nowrap",
+                                                                children: [
+                                                                    currentSong + 1,
+                                                                    " / ",
+                                                                    songs.length
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                                                lineNumber: 510,
+                                                                columnNumber: 53
+                                                            }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/jeu/vs/VSMode.js",
                                                             lineNumber: 509,
                                                             columnNumber: 49
                                                         }, this)
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                                    lineNumber: 507,
-                                                    columnNumber: 45
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "flex flex-col gap-0",
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                                        lineNumber: 508,
+                                                        columnNumber: 45
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                                lineNumber: 494,
+                                                columnNumber: 41
+                                            }, this),
+                                            (gameState === GAME_STATE.PLAYING || gameState === GAME_STATE.PAUSED) && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "",
                                                     children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                                            htmlFor: "artistName",
-                                                            children: "Nom de l'artiste :"
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                            className: "font-bold text-center text-xl text-[var(--text)]",
+                                                            children: formatTime(timeLeft)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                                            lineNumber: 516,
-                                                            columnNumber: 49
+                                                            lineNumber: 518,
+                                                            columnNumber: 53
                                                         }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                                            name: "artistName",
-                                                            value: answers[currentSong].artist,
-                                                            className: artistBox,
-                                                            placeholder: "votre réponse",
-                                                            type: "text",
-                                                            disabled: gameState !== GAME_STATE.PLAYING
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "relative h-3 rounded bg-purple-300",
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "absolute h-3 rounded transition-all duration-500 ".concat(timeLeft <= 5 ? "bg-[var(--accent-lighter)]" : "bg-[var(--accent)]"),
+                                                                style: {
+                                                                    width: "".concat(progressBar, "%")
+                                                                }
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                                                lineNumber: 521,
+                                                                columnNumber: 57
+                                                            }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                                            lineNumber: 517,
-                                                            columnNumber: 49
+                                                            lineNumber: 520,
+                                                            columnNumber: 53
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                                    lineNumber: 515,
-                                                    columnNumber: 45
+                                                    lineNumber: 517,
+                                                    columnNumber: 49
                                                 }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                            lineNumber: 506,
-                                            columnNumber: 41
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "flex flex-wrap gap-2",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                    onClick: prevSong,
-                                                    className: "bg-[var(--white)] text-black rounded px-4 py-2",
-                                                    children: "Musique précédante"
+                                            }, void 0, false),
+                                            ((_socketRef_current = socketRef.current) === null || _socketRef_current === void 0 ? void 0 : _socketRef_current.id) && ((_players_socketRef_current_id = players[socketRef.current.id]) === null || _players_socketRef_current_id === void 0 ? void 0 : _players_socketRef_current_id.roomLeader) && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                onClick: gameStateMessage[1],
+                                                className: "cursor-pointer bg-[var(--white)] mx-auto shadow-md my-4 text-[var(--accent)] duration-200 hover:text-[var(--accent-lighter)] font-bold uppercase rounded px-4 py-2 active:shadow-[none] active:bg-gray-50",
+                                                children: gameStateMessage[0]
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                                lineNumber: 533,
+                                                columnNumber: 45
+                                            }, this),
+                                            (gameState === GAME_STATE.PLAYING || gameState === GAME_STATE.SHOW_ANSWER || gameState === GAME_STATE.PAUSED) && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "flex justify-center items-center mb-4",
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                            className: answerMessageColor,
+                                                            children: answerMessage
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                                            lineNumber: 545,
+                                                            columnNumber: 53
+                                                        }, this)
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                                        lineNumber: 544,
+                                                        columnNumber: 49
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
+                                                        onSubmit: (e)=>{
+                                                            e.preventDefault();
+                                                            handleAnswer();
+                                                        },
+                                                        className: "flex flex-col flex-wrap gap-2",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "flex gap-2 justify-center",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "flex flex-col gap-0",
+                                                                        children: [
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                                                                htmlFor: "musicTitle",
+                                                                                className: "text-[var(--text)]",
+                                                                                children: "Titre de la musique :"
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                                                                lineNumber: 557,
+                                                                                columnNumber: 61
+                                                                            }, this),
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                                                                name: "musicTitle",
+                                                                                ref: titleAnswerRef,
+                                                                                className: "".concat(gameState === GAME_STATE.SHOW_ANSWER || gameState === GAME_STATE.GAME_OVER ? titleBox : 'bg-[var(--white)] text-[var(--black)] rounded px-4 py-2 placeholder-[var(--gray)] border border-[var(--gray)]'),
+                                                                                placeholder: "Votre réponse",
+                                                                                type: "text",
+                                                                                disabled: gameState !== GAME_STATE.PLAYING || ((_players_socketRef_current_id1 = players[(_socketRef_current1 = socketRef.current) === null || _socketRef_current1 === void 0 ? void 0 : _socketRef_current1.id]) === null || _players_socketRef_current_id1 === void 0 ? void 0 : _players_socketRef_current_id1.answered)
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                                                                lineNumber: 558,
+                                                                                columnNumber: 61
+                                                                            }, this)
+                                                                        ]
+                                                                    }, void 0, true, {
+                                                                        fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                                                        lineNumber: 556,
+                                                                        columnNumber: 57
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "flex flex-col gap-0",
+                                                                        children: [
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                                                                htmlFor: "artistName",
+                                                                                className: "text-[var(--text)]",
+                                                                                children: "Nom de l'artiste :"
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                                                                lineNumber: 572,
+                                                                                columnNumber: 61
+                                                                            }, this),
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                                                                name: "artistName",
+                                                                                ref: artistAnswerRef,
+                                                                                className: "".concat(gameState === GAME_STATE.SHOW_ANSWER || gameState === GAME_STATE.GAME_OVER ? artistBox : 'bg-[var(--white)] text-[var(--black)] rounded px-4 py-2 placeholder-[var(--gray)] border border-[var(--gray)]'),
+                                                                                placeholder: "Votre réponse",
+                                                                                type: "text",
+                                                                                disabled: gameState !== GAME_STATE.PLAYING || ((_players_socketRef_current_id2 = players[(_socketRef_current2 = socketRef.current) === null || _socketRef_current2 === void 0 ? void 0 : _socketRef_current2.id]) === null || _players_socketRef_current_id2 === void 0 ? void 0 : _players_socketRef_current_id2.answered)
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                                                                lineNumber: 573,
+                                                                                columnNumber: 61
+                                                                            }, this)
+                                                                        ]
+                                                                    }, void 0, true, {
+                                                                        fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                                                        lineNumber: 571,
+                                                                        columnNumber: 57
+                                                                    }, this)
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                                                lineNumber: 555,
+                                                                columnNumber: 53
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                                type: "submit",
+                                                                disabled: gameState !== GAME_STATE.PLAYING || ((_players_socketRef_current_id3 = players[(_socketRef_current3 = socketRef.current) === null || _socketRef_current3 === void 0 ? void 0 : _socketRef_current3.id]) === null || _players_socketRef_current_id3 === void 0 ? void 0 : _players_socketRef_current_id3.answered),
+                                                                className: gameState === GAME_STATE.SHOW_ANSWER || gameState === GAME_STATE.PAUSED ? "hidden" : "cursor-pointer bg-[var(--white)] mx-auto shadow-md mt-4 text-[var(--accent)] duration-200 hover:text-[var(--accent-lighter)] font-bold uppercase rounded px-4 py-2 active:shadow-[none] active:bg-gray-50",
+                                                                children: "Confirmer"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                                                lineNumber: 587,
+                                                                columnNumber: 53
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                                        lineNumber: 548,
+                                                        columnNumber: 49
+                                                    }, this)
+                                                ]
+                                            }, void 0, true),
+                                            (gameState === GAME_STATE.GAME_OVER || gameState === GAME_STATE.SHOW_ANSWER) && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "mt-4 mx-auto",
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Track$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                    track: songs[currentSong]
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                                    lineNumber: 524,
-                                                    columnNumber: 45
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                    onClick: nextSong,
-                                                    className: "bg-[var(--white)] text-black rounded px-4 py-2",
-                                                    children: "Musique suivante"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                                    lineNumber: 528,
-                                                    columnNumber: 45
+                                                    lineNumber: 600,
+                                                    columnNumber: 49
                                                 }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                            lineNumber: 523,
-                                            columnNumber: 41
-                                        }, this)
-                                    ]
-                                }, void 0, true)
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                                lineNumber: 599,
+                                                columnNumber: 45
+                                            }, this),
+                                            gameState === GAME_STATE.GAME_OVER && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "flex justify-center items-center mb-4",
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                            className: answerMessageColor,
+                                                            children: answerMessage
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                                            lineNumber: 607,
+                                                            columnNumber: 53
+                                                        }, this)
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                                        lineNumber: 606,
+                                                        columnNumber: 49
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "flex gap-4 items-start",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "flex flex-col gap-0",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                                                        htmlFor: "musicTitle",
+                                                                        children: "Titre de la musique :"
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                                                        lineNumber: 612,
+                                                                        columnNumber: 57
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                                                        name: "musicTitle",
+                                                                        value: answers[currentSong].title,
+                                                                        className: titleBox,
+                                                                        placeholder: "votre réponse",
+                                                                        type: "text",
+                                                                        disabled: gameState !== GAME_STATE.PLAYING
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                                                        lineNumber: 613,
+                                                                        columnNumber: 57
+                                                                    }, this)
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                                                lineNumber: 611,
+                                                                columnNumber: 53
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "flex flex-col gap-0",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                                                        htmlFor: "artistName",
+                                                                        children: "Nom de l'artiste :"
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                                                        lineNumber: 620,
+                                                                        columnNumber: 57
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                                                        name: "artistName",
+                                                                        value: answers[currentSong].artist,
+                                                                        className: artistBox,
+                                                                        placeholder: "votre réponse",
+                                                                        type: "text",
+                                                                        disabled: gameState !== GAME_STATE.PLAYING
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                                                        lineNumber: 621,
+                                                                        columnNumber: 57
+                                                                    }, this)
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                                                lineNumber: 619,
+                                                                columnNumber: 53
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                                        lineNumber: 610,
+                                                        columnNumber: 49
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "flex flex-wrap gap-2",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                                onClick: prevSong,
+                                                                className: "bg-[var(--white)] text-black rounded px-4 py-2",
+                                                                children: "Musique précédante"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                                                lineNumber: 628,
+                                                                columnNumber: 53
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                                onClick: nextSong,
+                                                                className: "bg-[var(--white)] text-black rounded px-4 py-2",
+                                                                children: "Musique suivante"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                                                lineNumber: 632,
+                                                                columnNumber: 53
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                                        lineNumber: 627,
+                                                        columnNumber: 49
+                                                    }, this)
+                                                ]
+                                            }, void 0, true)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                        lineNumber: 493,
+                                        columnNumber: 37
+                                    }, this)
+                                }, void 0, false)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                            lineNumber: 388,
-                            columnNumber: 29
-                        }, this)
-                    }, void 0, false),
-                    players && Object.keys(players).length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "mt-4",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                children: "Joueurs:"
-                            }, void 0, false, {
-                                fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                lineNumber: 541,
-                                columnNumber: 33
-                            }, this),
-                            Object.entries(players).map((param)=>{
-                                let [id, player] = param;
-                                return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            children: [
-                                                player.pseudo,
-                                                " (Score : ",
-                                                player.score,
-                                                ")"
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                            lineNumber: 544,
-                                            columnNumber: 41
-                                        }, this),
-                                        player.answered && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-green-500",
-                                            children: "A repondu !"
+                            lineNumber: 473,
+                            columnNumber: 25
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            id: "chat",
+                            className: "col-span-1",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "bg-[var(--middleground)] p-4 rounded-lg shadow-inner",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "h-64 overflow-y-auto mb-4 p-2 bg-[var(--background)] rounded border border-[var(--foreground)]",
+                                        children: chatMessages.length === 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "text-sm text-[var(--gray)]",
+                                            children: "Aucun message pour l'instant."
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                            lineNumber: 546,
-                                            columnNumber: 45
-                                        }, this)
-                                    ]
-                                }, id, true, {
-                                    fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                                    lineNumber: 543,
-                                    columnNumber: 37
-                                }, this);
-                            })
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                        lineNumber: 540,
-                        columnNumber: 29
-                    }, this)
-                ]
-            }, void 0, true, {
+                                            lineNumber: 649,
+                                            columnNumber: 41
+                                        }, this) : chatMessages.map((msg)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "text-sm my-1",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                        className: "font-bold text-[var(--accent)]",
+                                                        children: [
+                                                            msg.sender,
+                                                            " :"
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                                        lineNumber: 653,
+                                                        columnNumber: 49
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                        className: "ml-2",
+                                                        children: msg.text
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                                        lineNumber: 654,
+                                                        columnNumber: 49
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                        className: "text-xs text-[var(--gray)] ml-2",
+                                                        children: [
+                                                            "(",
+                                                            msg.timestamp,
+                                                            ")"
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                                        lineNumber: 655,
+                                                        columnNumber: 49
+                                                    }, this)
+                                                ]
+                                            }, msg.id, true, {
+                                                fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                                lineNumber: 652,
+                                                columnNumber: 45
+                                            }, this))
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                        lineNumber: 647,
+                                        columnNumber: 33
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
+                                        onSubmit: sendChatMessage,
+                                        className: "flex gap-1",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
+                                                className: "text-sm text-black placeholder-gray-500 resize-none px-2 py-1 bg-white rounded",
+                                                ref: chatMessageInputRef,
+                                                rows: "1",
+                                                placeholder: "message...",
+                                                onChange: handleTextareaResize,
+                                                onKeyDown: hanldleChatKeyDown
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                                lineNumber: 663,
+                                                columnNumber: 37
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                className: "px-3 py-1 active:shadow-none font-bold cursor-pointer text-(--white) shadow bg-(--accent) duration-200 hover:bg-(--accent-lighter) rounded",
+                                                type: "submit",
+                                                children: ">"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                                lineNumber: 671,
+                                                columnNumber: 37
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                        lineNumber: 662,
+                                        columnNumber: 33
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                                lineNumber: 645,
+                                columnNumber: 29
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                            lineNumber: 643,
+                            columnNumber: 25
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/app/jeu/vs/VSMode.js",
+                    lineNumber: 442,
+                    columnNumber: 21
+                }, this)
+            }, void 0, false, {
                 fileName: "[project]/src/app/jeu/vs/VSMode.js",
-                lineNumber: 368,
+                lineNumber: 441,
                 columnNumber: 17
             }, this)
         ]
     }, void 0, true);
 }
-_s(VSMode, "2JgTBrvSil8ttW8rXQFky9xeqT4=");
+_s(VSMode, "z3d0/yw4LuKWUv8TLDURC3ohSdk=", false, function() {
+    return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"]
+    ];
+});
 _c = VSMode;
 async function fetchTracks() {
     let mode = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : "genre", q = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : "0", limit = arguments.length > 2 && arguments[2] !== void 0 ? arguments[2] : 25, minRank = arguments.length > 3 && arguments[3] !== void 0 ? arguments[3] : 0, maxRank = arguments.length > 4 && arguments[4] !== void 0 ? arguments[4] : 1000000;
+    q = q.replace(/\s/g, '');
+    console.log(q);
     const res = await fetch("/api/tracks?mode=".concat(mode, "&q=").concat(encodeURIComponent(q), "&limit=").concat(limit, "&minRank=").concat(minRank, "&maxRank=").concat(maxRank));
     if (!res.ok) throw new Error("Erreur HTTP ".concat(res.status));
     const data = await res.json();

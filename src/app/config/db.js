@@ -1,18 +1,8 @@
-const mysql = require("mysql");
+import Database from "better-sqlite3";
+import path from "path";
 
-const db = mysql.createConnection({
-    host: "localhost",
-    user: "toto",
-    password: "chef",
-    database: "testdb"
-});
+const db = new Database(path.join(process.cwd(), "test.sqlite"));
 
-db.connect(err => {
-    if (err) {
-        console.error("Erreur de connexion à la database", err);
-    } else {
-        console.log("Connecté à la database")
-    }
-})
+console.log("Connecté à SQLite : test.sqlite");
 
-module.exports = db;
+export default db;
