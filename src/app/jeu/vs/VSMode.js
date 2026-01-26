@@ -111,7 +111,7 @@ export default function VSMode() {
 
     // sockets communication ^^
     useEffect(() => {
-        const socket = io("http://localhost:3001", {
+        const socket = io("http://localhost:10000", {
             path: "/socket.io",
             transports: ["websocket"],
         });
