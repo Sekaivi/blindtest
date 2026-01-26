@@ -4,7 +4,7 @@ const { join } = require("path");
 const { Server } = require("socket.io");
 const levenshtein = require("fast-levenshtein");
 
-const PORT = 3001;
+const PORT = 10000;
 const server = createServer();
 
 const io = new Server(server, {
